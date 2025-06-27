@@ -1,6 +1,6 @@
-name: muzan-x-md
+name: muzan-x md
 services:
-  - name: muzan-x-md-service
+  - name: muzan-x md-service
     type: web
     ports:
       - 5000
