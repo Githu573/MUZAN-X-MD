@@ -5,7 +5,7 @@ function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
 module.exports = {
-SESSION_ID: process.env.SESSION_ID || "pur your session id here ",
+SESSION_ID: process.env.SESSION_ID || "MUZAN~X~MD~C0pB3RxK#4_EJ8-jKMHRrRYpKhPtYHAeQHFMlYkuQ_WDrZGSzmJM",
 // add your Session Id 
 MENU_IMAGE_URL: process.env.MENU_IMAGE_URL || "https://files.catbox.moe/e8pgsz.png",
 // add custom menu and mention reply image url
