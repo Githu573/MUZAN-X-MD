@@ -1,4 +1,4 @@
-const { isJidBroadcast, isJidGroup, isJidNewsletter } = require('baileys');
+const { isJidBroadcast, isJidGroup, isJidNewsletter } = require('@whiskeysockets/baileys');
 const fs = require('fs/promises')
 const path = require('path')
 const { DataTypes } = require('sequelize');
@@ -214,5 +214,3 @@ module.exports = {
     getGroupMembersMessageCount,
     saveMessage: saveMessageV2,
 };
-
-// codes by JawadTechX 
