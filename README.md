@@ -71,7 +71,7 @@ You will need a session ID to run the MUZAN-X MD bot. Click the button below to 
 
 > **1️⃣ Pair Code (Session ID)**
 
-<a href='https://zarya-session-by-dawens-boy-tech.onrender.com' target="_blank">
+<a href='https://sessions-muzan-x-md.onrender.com' target="_blank">
   <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-orange?style=for-the-badge&logo=opencv&logoColor=black'/>
 </a>
 <br> 
