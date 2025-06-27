@@ -44,15 +44,6 @@ const {
   const path = require('path')
   const prefix = config.PREFIX
 
-global.db = {
-  data: {
-    antispam: []
-  }
-}
-
-const antispam = require('./lib/antispam')
-antispam.ResetSpam(global.db.data.antispam)
-
   const ownerNumber = ['13058962443']
   
   const tempDir = path.join(os.tmpdir(), 'cache-temp')
