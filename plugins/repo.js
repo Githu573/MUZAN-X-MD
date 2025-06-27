@@ -50,7 +50,7 @@ async (conn, mek, m, { from, reply }) => {
 *➤ MUZAN-X MD est un bot WhatsApp rapide, puissant et blindé par Dawens Tech. Fork-le et laisse une 🌟 !*
         `.trim();
 
-        const imgBuffer = await axios.get('https://files.catbox.moe/l0xrah.png', {
+        const imgBuffer = await axios.get('https://files.catbox.moe/9fj609.png', {
             responseType: 'arraybuffer'
         }).then(res => res.data);
 
