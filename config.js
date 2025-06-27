@@ -37,6 +37,10 @@ AUTO_TYPING: process.env.AUTO_TYPING || "false",
 // true for automatic show typing   
 READ_CMD: process.env.READ_CMD || "false",
 // true if want mark commands as read 
-DEV: process.env.DEV || "50942241547"
-//replace with your whatsapp number        
+DEV: process.env.DEV || "50942241547",
+//replace with your whatsapp number 
+ANTI_VV: process.env.ANTI_VV || "true",
+// true for anti once view  
+ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "same" 
+// change it to 'same' if you want to resend deleted message in same chat     
 };
