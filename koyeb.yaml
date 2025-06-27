@@ -1,6 +1,6 @@
-name: izuka-md
+name: muzan-x-md
 services:
-  - name: izuka-md-service
+  - name: muzan-x-md-service
     type: web
     ports:
       - 5000
