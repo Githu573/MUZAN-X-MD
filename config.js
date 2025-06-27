@@ -15,6 +15,10 @@ BOT_NAME: process.env.BOT_NAME || "JESUS-CRASH-V1",
 // add bot namw here for menu
 STICKER_NAME: process.env.STICKER_NAME || "JESUS-CRASH-V1",
 // type sticker pack name 
+WELCOME: 'true',
+// Active mesaj de bienvenue & sortie
+ADMIN_EVENTS: 'true', 
+// Active promote/demote    
 DELETE_LINKS: process.env.DELETE_LINKS || "false",
 // automatic delete links witho remove member 
 OWNER_NUMBER: process.env.OWNER_NUMBER || "13058962443",
