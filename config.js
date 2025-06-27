@@ -7,13 +7,13 @@ function convertToBool(text, fault = 'true') {
 module.exports = {
 SESSION_ID: process.env.SESSION_ID || "pur your session id here ",
 // add your Session Id 
-MENU_IMAGE_URL: process.env.MENU_IMAGE_URL || "https://files.catbox.moe/fuoqii.png",
+MENU_IMAGE_URL: process.env.MENU_IMAGE_URL || "https://files.catbox.moe/e8pgsz.png",
 // add custom menu and mention reply image url
 PREFIX: process.env.PREFIX || ".",
 // add your prifix for bot   
-BOT_NAME: process.env.BOT_NAME || "JESUS-CRASH-V1",
+BOT_NAME: process.env.BOT_NAME || "MUZAN-X MD",
 // add bot namw here for menu
-STICKER_NAME: process.env.STICKER_NAME || "JESUS-CRASH-V1",
+STICKER_NAME: process.env.STICKER_NAME || "MUZAN-X MD",
 // type sticker pack name 
 WELCOME: 'true',
 // Active mesaj de bienvenue & sortie
