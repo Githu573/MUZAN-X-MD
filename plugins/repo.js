@@ -13,7 +13,7 @@ cmd({
 },
 async (conn, mek, m, { from, reply }) => {
 
-    const githubRepoURL = 'https://github.com/DAWENS-BOY96/MUZAN-X MD';
+    const githubRepoURL = 'https://github.com/DAWENS-BOY96/MUZAN-X-MD';
     const sender = m.sender;
 
     try {
