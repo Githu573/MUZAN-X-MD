@@ -13,7 +13,7 @@ cmd({
   try {
     const botName = config.BOT_NAME || 'MUZAN-X MD';
     const ownerName = config.OWNER_NAME || 'DAWENS BOY';
-    const menuImage = config.MENU_IMAGE_URL || 'https://files.catbox.moe/fuoqii.png';
+    const menuImage = config.MENU_IMAGE_URL || 'https://files.catbox.moe/e8pgsz.png';
 
     // Goup commands pa kategori
     const grouped = {};
