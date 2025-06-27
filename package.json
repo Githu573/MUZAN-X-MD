@@ -4,9 +4,9 @@
   "description": "A WhatsApp Bot Created By DAWENS BOY TECH",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name MUZAN-X MD",
-    "stop": "pm2 stop MUZAN-X MD",
-    "restart": "pm2 restart MUZAN-X MD"
+    "start": "pm2 start index.js --deep-monitoring --attach --name \"MUZAN-X MD\"",
+    "stop": "pm2 stop \"MUZAN-X MD\"",
+    "restart": "pm2 restart \"MUZAN-X MD\""
   },
   "dependencies": {
     "@whiskeysockets/baileys": "^6.7.9",
