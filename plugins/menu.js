@@ -1,6 +1,5 @@
 const { cmd, commands } = require('../command');
 const config = require('../config');
-const fs = require('fs');
 
 cmd({
   pattern: 'menu',
@@ -9,13 +8,16 @@ cmd({
   category: 'main',
   react: '📜',
   filename: __filename
-}, async (conn, mek, m, { from, reply, pushname }) => {
+}, async (conn, mek, m, { from, pushname }) => {
   try {
     const botName = config.BOT_NAME || 'MUZAN-X MD';
     const ownerName = config.OWNER_NAME || 'DAWENS BOY';
     const menuImage = config.MENU_IMAGE_URL || 'https://files.catbox.moe/e8pgsz.png';
+    const userName = pushname || 'User';
+    const prefix = config.PREFIX || '.';
+    const mode = config.MODE || 'default';
 
-    // Goup commands pa kategori
+    // Grouper commands pa kategori
     const grouped = {};
     for (const plugin of commands) {
       const category = plugin.category || 'other';
@@ -23,28 +25,26 @@ cmd({
       grouped[category].push(plugin);
     }
 
-    // Header
+    // Kree header meni an
     let text = `╭───〔 *${botName} MENU* 〕───⬣
 │ 🤖 Bot de: ${ownerName}
-│ 💬 User: ${pushname}
-│ ⏺️ Mode: ${config.MODE}
-│ 🔰 Prefix: ${config.PREFIX || '.'}
+│ 💬 User: ${userName}
+│ ⏺️ Mode: ${mode}
+│ 🔰 Prefix: ${prefix}
 ╰──────────────⬣\n`;
 
-    // Ajoute commands yo san prefix
+    // Ajoute commands yo pa kategori
     for (const category in grouped) {
       text += `\n╭─⟪ *${category.toUpperCase()}* ⟫\n`;
-
-      for (const cmd of grouped[category]) {
-        const name = cmd.pattern;
-        const desc = cmd.desc ? `╰┈➤ ${cmd.desc}` : '';
+      for (const cmdItem of grouped[category]) {
+        const name = cmdItem.pattern;
+        const desc = cmdItem.desc ? `╰┈➤ ${cmdItem.desc}` : '';
         text += `│ 🜲 ${name}\n│ ${desc}\n`;
       }
-
       text += `╰──────────────⬣\n`;
     }
 
-    // Voye mesaj ak imaj meni
+    // Voye mesaj meni an avèk imaj ak contextInfo
     await conn.sendMessage(from, {
       image: { url: menuImage },
       caption: text.trim(),
@@ -62,6 +62,6 @@ cmd({
 
   } catch (e) {
     console.error("Menu Error:", e);
-    reply(`❌ Error generating menu:\n${e.message}`);
+    await conn.sendMessage(from, { text: `❌ Error generating menu:\n${e.message}` });
   }
 });
