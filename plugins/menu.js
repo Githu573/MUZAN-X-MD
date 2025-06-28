@@ -28,7 +28,7 @@ cmd({
 │ 🤖 Bot de: ${ownerName}
 │ 💬 User: ${pushname}
 │ ⏺️ Mode: ${config.MODE}
-│ 🔰 Prefix: (none)
+│ 🔰 Prefix: ${config.PREFIX || '.'}
 ╰──────────────⬣\n`;
 
     // Ajoute commands yo san prefix
