@@ -5,7 +5,7 @@ function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
 module.exports = {
-SESSION_ID: process.env.SESSION_ID || "MUZAN~X~MD~C0pB3RxK#4_EJ8-jKMHRrRYpKhPtYHAeQHFMlYkuQ_WDrZGSzmJM",
+SESSION_ID: process.env.SESSION_ID || "MUZAN~X~MD~7gRRiCBT#K20IOmHy9A4GQ1-SbcF8ek2oZ_H_juyDmbrab9cbe9s",
 // add your Session Id 
 MENU_IMAGE_URL: process.env.MENU_IMAGE_URL || "https://files.catbox.moe/e8pgsz.png",
 // add custom menu and mention reply image url
@@ -15,11 +15,11 @@ BOT_NAME: process.env.BOT_NAME || "MUZAN-X MD",
 // add bot namw here for menu
 STICKER_NAME: process.env.STICKER_NAME || "MUZAN-X MD",
 // type sticker pack name 
-WELCOME: 'true',
+WELCOME: 'false',
 // Active mesaj de bienvenue & sortie
 ADMIN_EVENTS: 'true', 
 // Active promote/demote    
-DELETE_LINKS: process.env.DELETE_LINKS || "false",
+DELETE_LINKS: process.env.DELETE_LINKS || "true",
 // automatic delete links witho remove member 
 OWNER_NUMBER: process.env.OWNER_NUMBER || "13058962443",
 // add your bot owner number
@@ -29,7 +29,7 @@ DESCRIPTION: process.env.DESCRIPTION || "*© ᴘᴏᴡᴇʀᴇᴅ by dawens boy*
 // add bot owner name    
 MODE: process.env.MODE || "public",
 // make bot public-private-inbox-group 
-ANTI_LINK_KICK: process.env.ANTI_LINK_KICK || "false",
+ANTI_LINK_KICK: process.env.ANTI_LINK_KICK || "true",
 // make anti link true,false for groups 
 PUBLIC_MODE: process.env.PUBLIC_MODE || "true",
 // make false if want private mod
